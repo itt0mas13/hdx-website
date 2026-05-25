@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Streamers — Hydrox eSports">
+    <title>HDX | Streamers</title>
+    <link rel="icon" href="../assets/images/logohdx.png">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/venobox.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        /* Layout de card de streamer */
+        .streamer-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 0;
+            border-bottom: 1px solid #191919;
+            flex-wrap: wrap;
+        }
+        .streamer-row:last-child { border-bottom: none; }
+        .streamer-embed { flex: 0 0 auto; width: 100%; max-width: 620px; }
+        .streamer-embed iframe { width: 100%; height: 350px; }
+        .streamer-info { flex: 1; min-width: 260px; }
+        .streamer-info span { font-size:19px; font-family:br; color:#af1515; text-transform:uppercase; letter-spacing:6px; }
+        .streamer-info h3 { font-size:38px; font-family:bb; color:white; text-transform:uppercase; padding:5px 0 20px; line-height:52px; }
+        .streamer-info h3 b { color:#af1515; }
+        .streamer-info p { font-family:br; font-size:19px; color:#787878; padding-bottom:30px; }
+        @media(max-width:768px) {
+            .streamer-embed { max-width: 100%; }
+            .streamer-embed iframe { height: 220px; }
+        }
+    </style>
+</head>
+<body id="darkmode">
+
+    <div class="preloader">
+        <img src="../assets/images/hdx gif.gif" alt="A carregar...">
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logohdx.png" alt="Hydrox eSports" class="img-fluid" width="120">
+            </a>
+            <div class="menu-main">
+                <ul class="navbar-nav ml-auto menu-item">
+                    <li class="nav-item">
+                        <a class="nav-link menu-icon js-open-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fullscreen-menu">
+            <ul class="nav-link-block">
+                <li><a href="../index.html"                   class="menu-link">Home</a></li>
+                <li><a href="../pages/sobre-nos.html"         class="menu-link">Sobre nós</a></li>
+                <li><a href="../pages/equipas.html"           class="menu-link">Equipas</a></li>
+                <li><a href="../pages/streamers.html"         class="menu-link">Streamers</a></li>
+                <li><a href="../index.html#news"               class="menu-link">Últimas notícias</a></li>
+                <li><a href="../pages/sobre-nos.html#partners" class="menu-link">Contactos</a></li>
+            </ul>
+            <div class="menu-close-btn">
+                <a class="js-close-menu"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- STREAMERS -->
+    <section id="streamers-page" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section-heading">
+                    <h3>Streamers</h3>
+                </div>
+            </div>
+
+            <!-- Hydrox eSports -->
+            <div class="streamer-row">
+                <div class="streamer-embed">
+                    <iframe src="https://player.twitch.tv/?channel=hdxesports&parent=localhost" frameborder="0" allowfullscreen scrolling="no" title="Hydrox eSports"></iframe>
+                </div>
+                <div class="streamer-info">
+                    <span>HDX</span>
+                    <h3>HYDROX ESPORTS<b>.</b></h3>
+                    <p>Vê todos os jogos dos Hydrox eSports no canal oficial da Twitch!</p>
+                    <a href="https://www.twitch.tv/hdxesports" class="btn-main">Ver canal</a>
+                </div>
+            </div>
+
+            <!-- itt0mas -->
+            <div class="streamer-row">
+                <div class="streamer-embed">
+                    <iframe src="https://player.twitch.tv/?channel=itt0mas&parent=localhost" frameborder="0" allowfullscreen scrolling="no" title="itt0mas"></iframe>
+                </div>
+                <div class="streamer-info">
+                    <span>HDX</span>
+                    <h3>itt0mas<b>.</b></h3>
+                    <p>"Chamo-me Tomás tenho 21 anos, vivo na Madeira e costumo jogar mais Rocket League, GTA RP, Fortnite e entre outros. Faço streams desde 2019 e estou a crescer aos poucos."</p>
+                    <a href="https://www.twitch.tv/itt0mas" class="btn-main">Ver canal</a>
+                </div>
+            </div>
+
+            <!-- matinhos85 -->
+            <div class="streamer-row">
+                <div class="streamer-embed">
+                    <iframe src="https://player.twitch.tv/?channel=matinhos85&parent=localhost" frameborder="0" allowfullscreen scrolling="no" title="matinhos85"></iframe>
+                </div>
+                <div class="streamer-info">
+                    <span>HDX</span>
+                    <h3>matinhos85<b>.</b></h3>
+                    <p>"Chamo-me Pedro Matos tenho 25 anos e sou Madeirense! Fui campeão de seniores da divisão de honra! Fui jogador do União da Madeira, AD Machico, AD Camacha."</p>
+                    <a href="https://www.twitch.tv/matinhos85" class="btn-main">Ver canal</a>
+                </div>
+            </div>
+
+            <!-- elpatronmal -->
+            <div class="streamer-row">
+                <div class="streamer-embed">
+                    <iframe src="https://player.twitch.tv/?channel=elpatronmal&parent=localhost" frameborder="0" allowfullscreen scrolling="no" title="elpatronmal"></iframe>
+                </div>
+                <div class="streamer-info">
+                    <span>HDX</span>
+                    <h3>elpatronmal<b>.</b></h3>
+                    <p>"Português nascido vivendo no Reino Unido tentando sobreviver neste novo mundo de streaming. 27 anos e contando, pai de uma filha de 5 anos e casado com a garota mais bonita do mundo."</p>
+                    <a href="https://www.twitch.tv/elpatronmal" class="btn-main">Ver canal</a>
+                </div>
+            </div>
+
+            <!-- CubitaS_75 -->
+            <div class="streamer-row">
+                <div class="streamer-embed">
+                    <iframe src="https://player.twitch.tv/?channel=cubitas_75&parent=localhost" frameborder="0" allowfullscreen scrolling="no" title="CubitaS_75"></iframe>
+                </div>
+                <div class="streamer-info">
+                    <span>HDX</span>
+                    <h3>CubitaS_75<b>.</b></h3>
+                    <p>"Chamo-me João Leal tenho 21 anos, vivo em Portugal e o meu forte é lives de CS2. Faço lives desde 2018."</p>
+                    <a href="https://www.twitch.tv/cubitas_75" class="btn-main">Ver canal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCORD CTA -->
+    <section id="discord-cta">
+        <div class="container z-top">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 cta-text">
+                    <h3>Fica a par de tudo entrando no nosso discord<b>.</b></h3>
+                </div>
+                <div class="col-lg-6 col-md-4 text-center">
+                    <a href="https://discord.gg/6PrmeE5jKx" class="btn-discord">Entrar Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" style="padding-bottom:60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="join-card">
+                        <div class="row">
+                            <div class="col-lg-6 join-text">
+                                <span>Hydrox eSports</span>
+                                <h3>TORNA-TE UM DOS NOSSOS</h3>
+                                <p>A Hydrox eSports é uma equipa amadora de vídeo-jogos fundada em 8 de Setembro de 2019 na Ilha da Madeira, Portugal.</p>
+                                <a href="../pages/candidaturas.html" class="btn-main">Candidatar-se</a>
+                            </div>
+                            <div class="col-lg-6 join-image">
+                                <img src="../assets/images/join us.png" alt="Junta-te">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer-brand">
+                    <a href="../index.html"><img src="../assets/images/logohdx.png" alt="Hydrox eSports" class="img-fluid" width="200"></a>
+                    <p>A Hydrox eSports é uma equipa amadora de vídeo-jogos fundada em 8 de Setembro de 2019 na Ilha da Madeira, Portugal.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/hydrox_e_sports/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/hydrox_e_sports"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063784740539"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCi9Q-AGEJZ0ZFYXZOa5ml3w"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-links">
+                    <h3>Menu</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/equipas.html">Equipas</a>
+                    <a href="../pages/sobre-nos.html">Sobre nós</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-links">
+                    <h3>Links</h3>
+                    <a href="../pages/candidaturas.html">Junta-te à comunidade</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-links">
+                    <h3>Informação</h3>
+                    <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="../pages/politica-devolucao.html">Política de Devolução</a>
+                    <a href="../pages/sobre-nos.html">Contactos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-7 copyright-text">
+                    <p><i class="fa fa-copyright"></i> 2026 Hydrox eSports — <a href="https://www.instagram.com/jtomasfreitas/?hl=pt">Tomás Freitas.</a></p>
+                </div>
+                <div class="col-lg-6 col-sm-5 text-right copyright-text"><p>All Rights Reserved.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/venobox.min.js"></script>
+    <script src="../assets/js/lightbox.min.js"></script>
+    <script src="../assets/js/counterup.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
