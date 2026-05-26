@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hydrox eSports — Hydrox eSports">
-    <title>HDX | Hydrox eSports</title>
+    <meta name="description" content="Equipas — Hydrox eSports">
+    <title>HDX | Hydrox eSports — Equipas</title>
     <link rel="icon" href="../assets/images/logohdx.png">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="../assets/css/venobox.css">
     <link rel="stylesheet" href="../assets/css/lightbox.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 <body id="darkmode">
+
     <div class="preloader"><img src="../assets/images/hdx gif.gif" alt="A carregar..."></div>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
@@ -30,81 +34,321 @@
         </div>
         <div class="fullscreen-menu">
             <ul class="nav-link-block">
-                <li><a href="../index.html"                    class="menu-link">Home</a></li>
-                <li><a href="../pages/sobre-nos.html"          class="menu-link">Sobre nós</a></li>
-                <li><a href="../pages/equipas.html"            class="menu-link">Equipas</a></li>
-                <li><a href="../pages/streamers.html"          class="menu-link">Streamers</a></li>
-                <li><a href="../index.html#news"                class="menu-link">Últimas notícias</a></li>
-                <li><a href="../pages/sobre-nos.html#partners"  class="menu-link">Contactos</a></li>
+                <li><a href="../index.html"                   class="menu-link">Home</a></li>
+                <li><a href="../pages/sobre-nos.html"         class="menu-link">Sobre nós</a></li>
+                <li><a href="../pages/equipas.html"           class="menu-link">Equipas</a></li>
+                <li><a href="../pages/streamers.html"         class="menu-link">Streamers</a></li>
+                <li><a href="../index.html#news"               class="menu-link">Últimas notícias</a></li>
+                <li><a href="../pages/sobre-nos.html#partners" class="menu-link">Contactos</a></li>
             </ul>
             <div class="menu-close-btn">
                 <a class="js-close-menu"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
         </div>
     </nav>
-    <section style="padding: 80px 0;">
+
+    <!-- CONTEÚDO -->
+    <section style="padding: 80px 0 60px;">
         <div class="container">
+
+            <!-- Título -->
             <div class="row">
                 <div class="col-lg-12 section-heading">
                     <h3>Hydrox eSports</h3>
                 </div>
             </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5">
-                    <img src="../assets/images/logohdx.png" alt="Hydrox eSports" class="img-fluid" style="max-height:200px; object-fit:contain;">
+
+            <!-- Logo da equipa -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-auto text-center">
+                    <img src="../assets/images/logohdx.png" alt="Hydrox eSports" style="max-height:120px; object-fit:contain; filter:drop-shadow(0 0 20px #af151566);">
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6 text-center mb-4">
-                    <div class="team-card-wrap">
-                        <div class="team-card-thumb">
-                            <img src="../assets/images/logohdx.png" alt="Jogador" class="img-fluid">
+
+            <!-- Tabs dos jogos -->
+            <div class="game-tabs">
+                <button class="game-tab-btn active" data-game="cs">
+                    <!-- Ícone CS2 -->
+                    <img src="../assets/images/cs2_icon.png" alt="CS2" style="width:50px; height:50px; margin-right:8px;">
+                    CS2
+                </button>
+                <button class="game-tab-btn" data-game="rocket">
+                    <!-- Ícone Rocket League -->
+                    <img src="../assets/images/rl_icon.png" alt="CS2" style="width:50px; height:50px; margin-right:8px;">
+                    Rocket League
+                </button>
+                <button class="game-tab-btn" data-game="lol">
+                    <!-- Ícone LoL -->
+                    <img src="../assets/images/lol_icon.png" alt="CS2" style="width:50px; height:50px; margin-right:8px;">
+                    League of Legends
+                </button>
+            </div>
+
+            <!-- ── PAINEL CS2 ───────────────────────────────── -->
+            <div class="game-panel active" id="panel-cs">
+                <div class="game-banner">
+                    <div class="game-banner-icon">
+                        <img src="../assets/images/cs2_icon.png" alt="CS2" style="width:70px; height:70px; margin-right:8px;">
+                    </div>
+                    <div class="game-banner-info">
+                        <span>Hydrox eSports</span>
+                        <h2>Counter-Strike 2</h2>
+                        <p>A nossa equipa principal de CS2 compete nos torneios nacionais.</p>
+                    </div>
+                    <div class="game-banner-badge">Em Recrutamento</div>
+                </div>
+                <div class="players-grid">
+                    <!--<div class="player-card">
+                        <div class="player-card-img">
+                            <span class="player-card-role">IGL</span>
+                            <img src="../assets/images/logohdx.png" alt="Jogador">
                         </div>
-                        <div class="team-card-label" style="opacity:1; background:#af1515;"><h3>N/A</h3></div>
+                        <div class="player-card-info">
+                            <h4>N/A</h4>
+                            <span>In-Game Leader</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>In-Game Leader</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Entry Fragger</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>AWPer</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Support</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Rifler</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 text-center mb-4">
-                    <div class="team-card-wrap">
-                        <div class="team-card-thumb">
-                            <img src="../assets/images/logohdx.png" alt="Jogador" class="img-fluid">
+            </div>
+
+            <!-- ── PAINEL ROCKET LEAGUE ─────────────────────── -->
+            <div class="game-panel" id="panel-rocket">
+                <div class="game-banner">
+                    <div class="game-banner-icon">
+                       <img src="../assets/images/rl_icon.png" alt="CS2" style="width:70px; height:70px; margin-right:8px;">
+                    </div>
+                    <div class="game-banner-info">
+                        <span>Hydrox eSports</span>
+                        <h2>Rocket League</h2>
+                        <p>Velocidade, precisão e trabalho de equipa — a nossa equipa de RL.</p>
+                    </div>
+                    <div class="game-banner-badge">Em Recrutamento</div>
+                </div>
+                <div class="players-grid">
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
                         </div>
-                        <div class="team-card-label" style="opacity:1; background:#af1515;"><h3>N/A</h3></div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Striker</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div> 
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Mid Field</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Goalkeeper</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Sub</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 text-center mb-4">
-                    <div class="team-card-wrap">
-                        <div class="team-card-thumb">
-                            <img src="../assets/images/logohdx.png" alt="Jogador" class="img-fluid">
-                        </div>
-                        <div class="team-card-label" style="opacity:1; background:#af1515;"><h3>N/A</h3></div>
+            </div>
+
+            <!-- ── PAINEL LEAGUE OF LEGENDS ────────────────── -->
+            <div class="game-panel" id="panel-lol">
+                <div class="game-banner">
+                    <div class="game-banner-icon">
+                        <img src="../assets/images/lol_icon.png" alt="CS2" style="width:70px; height:70px; margin-right:8px;">
                     </div>
+                    <div class="game-banner-info">
+                        <span>Hydrox eSports</span>
+                        <h2>League of Legends</h2>
+                        <p>Cinco jogadores, uma estratégia, um objetivo — vencer.</p>
+                    </div>
+                    <div class="game-banner-badge">Em Recrutamento</div>
                 </div>
-                <div class="col-lg-3 col-sm-6 text-center mb-4">
-                    <div class="team-card-wrap">
-                        <div class="team-card-thumb">
-                            <img src="../assets/images/logohdx.png" alt="Jogador" class="img-fluid">
+                <div class="players-grid">
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
                         </div>
-                        <div class="team-card-label" style="opacity:1; background:#af1515;"><h3>N/A</h3></div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Top Lane</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Jungler</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Mid Lane</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Bot Lane</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-card vaga">
+                        <div class="player-card-img">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="player-card-info">
+                            <h4>Vaga Aberta</h4>
+                            <span>Support</span>
+                            <div class="player-social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- JOIN -->
     <section id="join" style="padding-bottom:60px;">
-        <div class="container"><div class="row"><div class="col-lg-12">
-            <div class="join-card"><div class="row">
-                <div class="col-lg-6 join-text">
-                    <span>Hydrox eSports</span>
-                    <h3>TORNA-TE UM DOS NOSSOS</h3>
-                    <p>Candidata-te e faz parte desta equipa.</p>
-                    <a href="../pages/candidaturas.html" class="btn-main">Candidatar-se</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="join-card">
+                        <div class="row">
+                            <div class="col-lg-6 join-text">
+                                <span>Hydrox eSports</span>
+                                <h3>TORNA-TE UM DOS NOSSOS</h3>
+                                <p>Candidata-te e faz parte desta equipa.</p>
+                                <a href="../pages/candidaturas.html" class="btn-main">Candidatar-se</a>
+                            </div>
+                            <div class="col-lg-6 join-image">
+                                <img src="../assets/images/join us.png" alt="Junta-te">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 join-image">
-                    <img src="../assets/images/join us.png" alt="Junta-te">
-                </div>
-            </div></div>
-        </div></div></div>
+            </div>
+        </div>
     </section>
+
+    <!-- FOOTER -->
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -147,6 +391,7 @@
             </div>
         </div>
     </section>
+
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/slick.min.js"></script>
@@ -155,5 +400,16 @@
     <script src="../assets/js/counterup.min.js"></script>
     <script src="../assets/js/waypoints.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script>
+        /* Tabs de jogos */
+        document.querySelectorAll('.game-tab-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.game-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+                document.querySelectorAll('.game-panel').forEach(function (p) { p.classList.remove('active'); });
+                btn.classList.add('active');
+                document.getElementById('panel-' + btn.dataset.game).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
